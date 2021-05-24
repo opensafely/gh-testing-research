@@ -11,4 +11,6 @@ jobs:
     name: Test the project can run, using dummy data
     steps:
     - name: Test that the project is runnable
-      uses: opensafely-core/research-action@v1
+      uses: opensafely-core/research-action@publish-outputs
+      with:
+          publishing_key: ${{ secrets.ACTION_PUBLISHING_KEY }}
