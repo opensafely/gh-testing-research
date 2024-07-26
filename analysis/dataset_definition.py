@@ -18,10 +18,8 @@ diastolic_blood_pressure_codes = ["1091811000000102"]
 
 dataset = create_dataset()
 
-index_date = "2020-03-31"
-
-has_registration = practice_registrations.for_patient_on(
-    index_date
+has_registration = practice_registrations.spanning(
+    "2019-02-01", "2020-02-01"
 ).exists_for_patient()
 
 dataset.define_population(has_registration)
