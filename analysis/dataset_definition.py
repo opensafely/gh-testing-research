@@ -1,5 +1,5 @@
 from ehrql import codelist_from_csv, create_dataset
-from ehrql.tables.core import clinical_events
+from ehrql.tables.core import clinical_events, medications
 from ehrql.tables.tpp import patients, practice_registrations
 
 chronic_cardiac_disease_codes = codelist_from_csv(
@@ -7,6 +7,9 @@ chronic_cardiac_disease_codes = codelist_from_csv(
 )
 chronic_liver_disease_codes = codelist_from_csv(
     "codelists/opensafely-chronic-liver-disease-snomed.csv", column="id"
+)
+salbutamol_codes = codelist_from_csv(
+    "codelists/opensafely-asthma-inhaler-salbutamol-medication.csv", column="id"
 )
 
 dataset = create_dataset()
@@ -37,4 +40,10 @@ dataset.chronic_liver_disease = (
     .sort_by(clinical_events.date)
     .first_for_patient()
     .date
+)
+
+dataset.recent_salbutamol_count = (
+    medications.where(medications.dmd_code.is_in(salbutamol_codes))
+    .where(medications.date.is_on_or_between("2018-02-01", "2020-02-01"))
+    .count_for_patient()
 )
