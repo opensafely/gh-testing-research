@@ -1,10 +1,10 @@
 {
   "files": {
-    "opensafely-chronic-cardiac-disease.csv": {
-      "id": "opensafely/chronic-cardiac-disease/2020-04-08",
-      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-cardiac-disease/2020-04-08/",
-      "downloaded_at": "2024-04-03 11:00:31.860413Z",
-      "sha": "2267f6fada9c77a2bbf62ce7a1c07ddf48348d61"
+    "opensafely-chronic-cardiac-disease-snomed.csv": {
+      "id": "opensafely/chronic-cardiac-disease-snomed/2020-04-08",
+      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-cardiac-disease-snomed/2020-04-08/",
+      "downloaded_at": "2024-07-26 11:14:02.681658Z",
+      "sha": "9af634a364f09123c83d6da9a694642ccd3075be"
     },
     "opensafely-chronic-liver-disease.csv": {
       "id": "opensafely/chronic-liver-disease/2020-06-02",
