@@ -76,6 +76,9 @@ dataset.bp_dias = bp_dias_clinical_events.where(
     clinical_events.date == date_of_most_recent_bp_dias_clinical_event
 ).numeric_value.mean_for_patient()
 
+# https://github.com/opensafely/risk-factors-research/issues/44
+dataset.stp = practice_registrations.for_patient_on("2020-02-01").practice_stp
+
 dataset.recent_salbutamol_count = (
     medications.where(medications.dmd_code.is_in(salbutamol_codes))
     .where(medications.date.is_on_or_between("2018-02-01", "2020-02-01"))
