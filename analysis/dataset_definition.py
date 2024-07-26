@@ -82,6 +82,9 @@ dataset.stp = practice_registrations.for_patient_on("2020-02-01").practice_stp
 # https://github.com/opensafely/risk-factors-research/issues/44
 dataset.msoa = addresses.for_patient_on("2020-02-01").msoa_code
 
+# https://github.com/opensafely/risk-factors-research/issues/45
+dataset.imd = addresses.for_patient_on("2020-02-01").imd_rounded
+
 dataset.recent_salbutamol_count = (
     medications.where(medications.dmd_code.is_in(salbutamol_codes))
     .where(medications.date.is_on_or_between("2018-02-01", "2020-02-01"))
