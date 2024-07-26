@@ -85,6 +85,9 @@ dataset.msoa = addresses.for_patient_on("2020-02-01").msoa_code
 # https://github.com/opensafely/risk-factors-research/issues/45
 dataset.imd = addresses.for_patient_on("2020-02-01").imd_rounded
 
+# https://github.com/opensafely/risk-factors-research/issues/47
+dataset.rural_urban = addresses.for_patient_on("2020-02-01").rural_urban_classification
+
 dataset.recent_salbutamol_count = (
     medications.where(medications.dmd_code.is_in(salbutamol_codes))
     .where(medications.date.is_on_or_between("2018-02-01", "2020-02-01"))
