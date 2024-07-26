@@ -1,5 +1,10 @@
 # gh-testing-research
 
+> [!NOTE]
+> This repository exists only for testing [opensafely-core/research-action](https://github.com/opensafely-core/research-action).
+> It will not have a record on [OpenSAFELY Jobs](https://jobs.opensafely.org/).
+> Like all OpenSAFELY repositories, however, it includes a standard `README.md`.
+
 [View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252Fopensafely%252Fgh-testing-research)
 
 Details of the purpose and any published outputs from this project can be found at the link above.
