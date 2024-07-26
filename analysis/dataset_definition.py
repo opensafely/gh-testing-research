@@ -20,11 +20,11 @@ index_date = "2020-02-01"
 
 dataset = create_dataset()
 
-has_registration = practice_registrations.spanning(
-    index_date - years(1), index_date
-).exists_for_patient()
-
-dataset.define_population(has_registration)
+dataset.define_population(
+    practice_registrations.spanning(
+        index_date - years(1), index_date
+    ).exists_for_patient()
+)
 
 # https://github.com/opensafely/risk-factors-research/issues/49
 dataset.age = patients.age_on(index_date)
