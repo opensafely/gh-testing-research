@@ -1,6 +1,6 @@
 from ehrql import codelist_from_csv, create_dataset
-from ehrql.tables.core import clinical_events, medications
-from ehrql.tables.tpp import addresses, patients, practice_registrations
+from ehrql.tables.core import clinical_events, medications, patients
+from ehrql.tables.tpp import addresses, practice_registrations
 
 chronic_cardiac_disease_codes = codelist_from_csv(
     "codelists/opensafely-chronic-cardiac-disease-snomed.csv", column="id"
