@@ -24,6 +24,9 @@ has_registration = practice_registrations.spanning(
 
 dataset.define_population(has_registration)
 
+# https://github.com/opensafely/risk-factors-research/issues/49
+dataset.age = patients.age_on("2020-02-01")
+
 dataset.sex = patients.sex
 
 dataset.chronic_cardiac_disease = (
