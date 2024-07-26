@@ -1,6 +1,6 @@
 from ehrql import codelist_from_csv, create_dataset
 from ehrql.tables.core import clinical_events, medications
-from ehrql.tables.tpp import patients, practice_registrations
+from ehrql.tables.tpp import addresses, patients, practice_registrations
 
 chronic_cardiac_disease_codes = codelist_from_csv(
     "codelists/opensafely-chronic-cardiac-disease-snomed.csv", column="id"
@@ -78,6 +78,9 @@ dataset.bp_dias = bp_dias_clinical_events.where(
 
 # https://github.com/opensafely/risk-factors-research/issues/44
 dataset.stp = practice_registrations.for_patient_on("2020-02-01").practice_stp
+
+# https://github.com/opensafely/risk-factors-research/issues/44
+dataset.msoa = addresses.for_patient_on("2020-02-01").msoa_code
 
 dataset.recent_salbutamol_count = (
     medications.where(medications.dmd_code.is_in(salbutamol_codes))
