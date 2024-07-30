@@ -1,16 +1,16 @@
 {
   "files": {
-    "opensafely-chronic-cardiac-disease.csv": {
-      "id": "opensafely/chronic-cardiac-disease/2020-04-08",
-      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-cardiac-disease/2020-04-08/",
-      "downloaded_at": "2024-04-03 11:00:31.860413Z",
-      "sha": "2267f6fada9c77a2bbf62ce7a1c07ddf48348d61"
+    "opensafely-chronic-cardiac-disease-snomed.csv": {
+      "id": "opensafely/chronic-cardiac-disease-snomed/2020-04-08",
+      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-cardiac-disease-snomed/2020-04-08/",
+      "downloaded_at": "2024-07-26 11:14:02.681658Z",
+      "sha": "9af634a364f09123c83d6da9a694642ccd3075be"
     },
-    "opensafely-chronic-liver-disease.csv": {
-      "id": "opensafely/chronic-liver-disease/2020-06-02",
-      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-liver-disease/2020-06-02/",
-      "downloaded_at": "2024-04-03 11:00:32.004640Z",
-      "sha": "d31d212d23c5f0e15f63236d2106282fb070bd7c"
+    "opensafely-chronic-liver-disease-snomed.csv": {
+      "id": "opensafely/chronic-liver-disease-snomed/2020-06-02",
+      "url": "https://www.opencodelists.org/codelist/opensafely/chronic-liver-disease-snomed/2020-06-02/",
+      "downloaded_at": "2024-07-26 11:25:50.449521Z",
+      "sha": "996796d695797fe151821c2e01be26d7d3bfb77c"
     },
     "opensafely-asthma-inhaler-salbutamol-medication.csv": {
       "id": "opensafely/asthma-inhaler-salbutamol-medication/2020-04-15",

@@ -1,3 +1,3 @@
 log using logs/model.log
-import delimited output/input.csv
+import delimited output/dataset.csv
 log close
